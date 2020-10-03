@@ -4,7 +4,11 @@
 
 This replicates as well as possible real deployment configurations, where you have your zookeeper servers and kafka servers actually all distinct from each other. This solves all the networking hurdles that comes with Docker and docker-compose, and is compatible cross platform.
 
+这复制了可能的实际部署配置，其中zookeeper服务器和kafka服务器实际上都是不同的。这解决了Docker和Docker compose带来的所有联网障碍，并且是跨平台兼容的。
+
 **UPDATE**: No /etc/hosts file changes are necessary anymore. Explanations at: https://rmoff.net/2018/08/02/kafka-listeners-explained/
+
+不再需要更改/etc/hosts文件
 
 ## Stack version
 
@@ -24,6 +28,8 @@ This replicates as well as possible real deployment configurations, where you ha
 
 Once you have started your cluster, you can use [Conduktor](https://www.conduktor.io/) to easily manage it. 
 Just connect against `localhost:9092` if using Docker, or `192.168.99.100` if using Docker Toolbox
+
+启动集群后，可以使用[Conduktor](https://www.conduktor.io/)以便于管理。只需与`localhost:9092`如果使用Docker，则为“192.168.99.100”（如果使用Docker工具箱）
 
 # Requirements
 
